@@ -69,9 +69,6 @@ public class DetailActivity extends AppCompatActivity {
         TextView knownAsTv = findViewById(R.id.also_known_tv);
         String alsoKnownAs = TextUtils.join(", ", sandwich.getAlsoKnownAs());
         knownAsTv.setText(alsoKnownAs);
-        if(alsoKnownAs == ""){
-            knownAsTv.setVisibility(View.INVISIBLE);
-        }
 
         TextView descriptionTv = findViewById(R.id.description_tv);
         descriptionTv.setText(sandwich.getDescription());
